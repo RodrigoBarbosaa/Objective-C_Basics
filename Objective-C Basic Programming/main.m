@@ -33,6 +33,19 @@ int main(int argc, const char * argv[]) {
         }
         
         
+        // Dictionaries
+        
+        NSDictionary* myDict = [NSDictionary dictionaryWithObject:@"Rodrigo" forKey:@"name"];
+        NSLog(@"Value for name is: %@", [myDict objectForKey:@"name"]);
+        
+        
+        NSMutableDictionary* myMutableDict = [[NSMutableDictionary alloc] init];
+        [myMutableDict setValue:@"Barbosa" forKey:@"lastName"];
+        
+        NSLog(@"My full name is: %@ %@", [myDict objectForKey:@"name"], [myMutableDict objectForKey:@"lastName"]);
+        
+        NSLog(@"All keys in my mutable dictionarie %@", [myMutableDict allKeys]);
+        NSLog(@"All values in my mutable dictionarie %@", [myMutableDict allValues]);
         
     }
     return 0;
