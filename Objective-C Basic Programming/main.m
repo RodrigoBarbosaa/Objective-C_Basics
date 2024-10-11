@@ -47,6 +47,20 @@ int main(int argc, const char * argv[]) {
         NSLog(@"All keys in my mutable dictionarie %@", [myMutableDict allKeys]);
         NSLog(@"All values in my mutable dictionarie %@", [myMutableDict allValues]);
         
+        
+        // For loops
+        
+        for (int i = 0; i < 10; i++){
+            NSLog(@"%i", i);
+        }
+        
+        for (int i = 0; i < myArr.count; i++) {
+            NSLog(@"This is: %@", myArr[i]);
+        }
+        
+        for (NSString* any in myArr) {
+            NSLog(@"This is: %@", any);
+        }
     }
     return 0;
 }
