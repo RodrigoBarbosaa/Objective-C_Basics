@@ -61,6 +61,53 @@ int main(int argc, const char * argv[]) {
         for (NSString* any in myArr) {
             NSLog(@"This is: %@", any);
         }
+        
+        
+        // Switch
+        
+        int myInt = 1;
+        
+        switch (myInt) {
+            case 0:
+                NSLog(@"myInt is 0");
+                break;
+            case 1:
+                NSLog(@"myInt is 1");
+                break;
+            case 2:
+                NSLog(@"myInt is 2");
+                break;
+                
+            default:
+                NSLog(@"Cant find myInt is 0");
+                break;
+        }
+        NSArray* cityArr = [[NSArray alloc] initWithObjects:@"Recife",@"London",@"New York",@"Basel",nil];
+        NSString* myCity = @"Basel";
+        int cityIndex = (int) [cityArr indexOfObject:myCity];
+        
+        switch (cityIndex) {
+            case 0:
+                NSLog(@"I live in Recife!");
+                break;
+            
+            case 1:
+                NSLog(@"I live in London!");
+                break;
+                
+            case 2:
+                NSLog(@"I live in New York!");
+                break;
+                
+            case 3:
+                NSLog(@"I live in Basel!");
+                break;
+            default:
+                NSLog(@"I dont have a house ;-;");
+                break;
+        }
+        
+        
     }
     return 0;
 }
